@@ -21,3 +21,11 @@ A disclaimer is included to highlight that the model's outputs may not always be
 A privacy policy link is provided for user reference.
 
 It's important to note that this demo showcases the capabilities of the LLaMA-7B model and its interaction with users. However, as with any AI-generated content, users should be aware that the model's responses may not always be entirely accurate or appropriate, and they should exercise caution when using the chatbot for factual information or important decisions.
+
+
+## RAG with Langchain
+The provided notebook demonstrates a Retrieval Augmented Generation agent using Langchain, Weaviate and Ollama (Llama 3.1). Use a PDF link and get the data. Transform the data into chunks using Character Text Splitter and store the chunks to vector-store from Weaviate. 
+
+Create a Prompt template to make our model understand what we plan to achieve. Use langchain libraries to store and run the prompt.
+
+Create ChatOllama llm and pass in the prmopt, context/pdf and your question. The agent will answer your question using the PDF increasing the accuracy.
