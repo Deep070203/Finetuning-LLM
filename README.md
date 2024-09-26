@@ -28,4 +28,11 @@ The provided notebook demonstrates a Retrieval Augmented Generation agent using 
 
 Create a Prompt template to make our model understand what we plan to achieve. Use langchain libraries to store and run the prompt.
 
-Create ChatOllama llm and pass in the prmopt, context/pdf and your question. The agent will answer your question using the PDF increasing the accuracy.
+Create ChatOllama llm and pass in the prompt, context/pdf and your question. The agent will answer your question using the PDF increasing the accuracy.
+
+## PEFT-Finetuning Qwen2.5
+The provided Colab notebook demonstrates PEFT Finetuning of Qwen2.5-1.5B model using the method Low Rank Adaptation "LoRA". First we load the model from Hugging Face, Post-process the model to freeze some parameters.
+
+Then we apply LoRA with the LoRA Config and we use a dataset from Huggingface to train the model.
+
+Then, we save the new LoRA model to our Huggingface account and check if we can load from our account and run it for inference.
